@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 html {
     background-color: rgba(10, 12, 15);
 }
@@ -6,7 +8,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: 'Inter', sans-serif;
 }
 
 header {
@@ -26,9 +28,7 @@ header {
     margin: 0 auto;
 }   
 
-#showMore {
-    display: none;
-}
+
 
 nav a {
     width: auto;    
@@ -43,6 +43,10 @@ nav a {
 }
 nav a:last-child {
     margin-right: 0;
+}
+
+#showMore {
+    display: none;
 }
 
 h1 {
@@ -114,4 +118,48 @@ footer {
 .learnMore p {
     font-weight: 700;
     font-size: 24px;
+}
+
+@media screen and (max-width: 1380px) {
+    section img {
+        width: 100%;
+    }
+    section {
+        flex-direction: column-reverse !important;
+    }
+    .section_content {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .headWrapper {
+        padding: 0 20px;
+    }
+    nav .desktop{
+        display: none;
+    }
+    #showMore {
+        display: block;
+    }
+    .mainWrapper {
+        padding: 40px 20px 0;
+    }h1 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+    h2 {
+        font-size: 32px;
+        margin-bottom: 12px;
+    }
+    .sectionText p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    section img {
+        width: 70%;
+    }
+    .learnMore {
+        width: 100%;
+    }
 }
